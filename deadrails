@@ -1,0 +1,150 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()  
+
+local Window = Rayfield:CreateWindow({
+    Name = "DEAD OR ALIVE",
+    Icon = 76514024748649,
+    LoadingTitle = "DEATH OR ALIVE [UNIVERSAL]",
+    LoadingSubtitle = "by scorp",
+    ConfigurationSaving = {
+        Enabled = true,
+        FolderName = nil,
+        FileName = "Big Hub"
+    },
+    Discord = {
+        Enabled = false,
+        Invite = "noinvitelink",
+        RememberJoins = true
+    },
+    KeySystem = true,
+    KeySettings = {
+        Title = "Key system",
+        Subtitle = "Dead or alive key system",
+        Note = "Key in telegram @scorpbf",
+        FileName = "Key",
+        SaveKey = true,
+        GrabKeyFromSite = false,
+        Key = {"doa_134", "doa_135", "doa_175", "doa_762"}
+    }
+})
+
+-- Создание вкладок
+local InfoTab = Window:CreateTab("Info", 4483362458)
+local ScriptsTab = Window:CreateTab("Scripts", 4483362459)  -- Вкладка "Scripts"
+local PlayerTab = Window:CreateTab("Player", 4483362460)  -- Вкладка "Player"
+
+-- Добавление кнопок в вкладку "Scripts"
+local Button = ScriptsTab:CreateButton({
+   Name = "Fly GUI Antioder edition",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/aftermath-dev/aftermath-hubs/refs/heads/main/fly"))()
+   end,
+})
+
+local Button = ScriptsTab:CreateButton({
+   Name = "Chat Spy (/spy for toggle)",
+   Callback = function()
+       loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Chat-spy-3000"))()
+   end,
+})
+
+local Button = ScriptsTab:CreateButton({
+   Name = "Walk On Walls",
+   Callback = function()
+       loadstring(game:HttpGet("https://rawscripts.net/raw/The-patience-obby-Universal-Walk-on-walls-18129"))()
+   end,
+})
+
+local Button = ScriptsTab:CreateButton({
+   Name = "R6 script",
+   Callback = function()
+       loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-R6-Animations-on-R15-16865"))()
+   end,
+})
+
+local Button = ScriptsTab:CreateButton({
+   Name = "Mobile Keyboard",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+   end,
+})
+
+local Button = ScriptsTab:CreateButton({
+   Name = "FPS Booster",
+   Callback = function()
+       loadstring(game:HttpGet("https://pastebin.com/raw/gvUFpwQw"))()
+   end,
+})
+
+local Button = ScriptsTab:CreateButton({
+   Name = "Stretched Resolution (растяг экрана)",
+   Callback = function()
+       loadstring(game:HttpGet("https://pastebin.com/raw/HWD8dq9z"))()
+   end,
+})
+
+local Button = ScriptsTab:CreateButton({
+   Name = "Speed Animations Changer",
+   Callback = function()
+       loadstring(game:HttpGet("https://pastebin.com/raw/dAnuL1X3"))()
+   end,
+})
+
+local Button = ScriptsTab:CreateButton({
+   Name = "J*rk Off (ONLY R6!!!)",
+   Callback = function()
+       loadstring(game:HttpGet("https://pastefy.app/wa3v2Vgm/raw"))("Spider Script")
+   end,
+})
+
+local Button = ScriptsTab:CreateButton({
+   Name = "Ambient NO FE",
+   Callback = function()
+       loadstring(game:HttpGet('https://pastefy.app/S7xNJSXX/raw'))()execute("Script14")
+   end,
+})
+
+local Button = ScriptsTab:CreateButton({
+   Name = "Big Jump Button (works on mobile, tablet have errors)",
+   Callback = function()
+       loadstring(game:HttpGet("https://pastebin.com/raw/p3TfEqQ2"))()
+   end,
+})
+
+local Button = ScriptsTab:CreateButton({
+   Name = "Anti AFK",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/KazeOnTop/Rice-Anti-Afk/main/Wind", true))()
+   end,
+})
+
+local Button = ScriptsTab:CreateButton({
+   Name = "B tools (visual lol)",
+   Callback = function()
+       loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/BTools.txt"))()
+   end,
+})
+
+-- Добавление слайдеров в вкладку "Player"
+local Slider = PlayerTab:CreateSlider({
+   Name = "Walk Speed",
+   Range = {1, 350},
+   Increment = 1,
+   Suffix = "Speed",
+   CurrentValue = 16,
+   Flag = "sliderws", -- Флаг для идентификации в конфиге
+   Callback = function(Value)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (Value)
+   end,
+})
+
+local Slider = PlayerTab:CreateSlider({
+   Name = "Jump Power",
+   Range = {1, 350},
+   Increment = 1,
+   Suffix = "Speed",
+   CurrentValue = 16,
+   Flag = "sliderjp", -- Флаг для идентификации в конфиге
+   Callback = function(Value)
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = (Value)
+   end,
+})
