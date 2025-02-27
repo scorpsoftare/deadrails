@@ -29,7 +29,7 @@ local Window = Rayfield:CreateWindow({
 
 -- Создание вкладок
 local InfoTab = Window:CreateTab("Info", 4483362458)
-local ScriptsTab = Window:CreateTab("Scripts", 4483362459)  -- Вкладка "Scripts"
+local ScriptsTab = Window:CreateTab("Scripts", 17445585565)  -- Вкладка "Scripts"
 local PlayerTab = Window:CreateTab("Player", 4483362460)  -- Вкладка "Player"
 local VisualTab = Window:CreateTab("Visual", 4483362461)  -- Вкладка "Visual"
 
