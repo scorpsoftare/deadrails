@@ -31,6 +31,7 @@ local Window = Rayfield:CreateWindow({
 local InfoTab = Window:CreateTab("Info", 4483362458)
 local ScriptsTab = Window:CreateTab("Scripts", 4483362459)  -- Вкладка "Scripts"
 local PlayerTab = Window:CreateTab("Player", 4483362460)  -- Вкладка "Player"
+local VisualTab = Window:CreateTab("Visual", 4483362461)  -- Вкладка "Visual"
 
 -- Добавление кнопок в вкладку "Scripts"
 local Button = ScriptsTab:CreateButton({
@@ -44,13 +45,6 @@ local Button = ScriptsTab:CreateButton({
    Name = "Chat Spy (/spy for toggle)",
    Callback = function()
        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Chat-spy-3000"))()
-   end,
-})
-
-local Button = ScriptsTab:CreateButton({
-   Name = "Walk On Walls",
-   Callback = function()
-       loadstring(game:HttpGet("https://rawscripts.net/raw/The-patience-obby-Universal-Walk-on-walls-18129"))()
    end,
 })
 
@@ -83,13 +77,6 @@ local Button = ScriptsTab:CreateButton({
 })
 
 local Button = ScriptsTab:CreateButton({
-   Name = "Speed Animations Changer",
-   Callback = function()
-       loadstring(game:HttpGet("https://pastebin.com/raw/dAnuL1X3"))()
-   end,
-})
-
-local Button = ScriptsTab:CreateButton({
    Name = "J*rk Off (ONLY R6!!!)",
    Callback = function()
        loadstring(game:HttpGet("https://pastefy.app/wa3v2Vgm/raw"))("Spider Script")
@@ -104,13 +91,6 @@ local Button = ScriptsTab:CreateButton({
 })
 
 local Button = ScriptsTab:CreateButton({
-   Name = "Big Jump Button (works on mobile, tablet have errors)",
-   Callback = function()
-       loadstring(game:HttpGet("https://pastebin.com/raw/p3TfEqQ2"))()
-   end,
-})
-
-local Button = ScriptsTab:CreateButton({
    Name = "Anti AFK",
    Callback = function()
        loadstring(game:HttpGet("https://raw.githubusercontent.com/KazeOnTop/Rice-Anti-Afk/main/Wind", true))()
@@ -121,6 +101,14 @@ local Button = ScriptsTab:CreateButton({
    Name = "B tools (visual lol)",
    Callback = function()
        loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/BTools.txt"))()
+   end,
+})
+
+-- Добавление кнопки для Fullbright в вкладку "Visual"
+local Button = VisualTab:CreateButton({
+   Name = "Fullbright (Always Day)",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/scorpsoftare/fullbright/refs/heads/main/fullbright"))()
    end,
 })
 
